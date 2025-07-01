@@ -1,0 +1,10 @@
+[Unit]
+Description=Automatically start OCR
+After=network.target
+
+[Service]
+ExecStart=python3 /path/to/ocr.py
+User=*user*
+
+[Install]
+WantedBy=multi-user.target
